@@ -101,7 +101,7 @@ namespace CleanArchitecture.Presentation.Sales.Services
                 Is.EqualTo(ProductId.ToString()));
             
             Assert.That(result.Text, 
-                Is.EqualTo("Product 3 ($1.23)"));
+                Is.EqualTo($"Product 3 (${1.23})"));
         }
 
         [Test]
